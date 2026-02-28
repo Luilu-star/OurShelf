@@ -1,4 +1,4 @@
-# Mini Virtual Bookshelf
+# OurShelf
 
 A mini virtual bookshelf created for two friends to share their readings, keep track of books, and exchange recommendations in a simple and personal way.
 
