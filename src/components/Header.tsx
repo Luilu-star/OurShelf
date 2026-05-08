@@ -5,7 +5,7 @@ import { fas, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 library.add(fas,faMagnifyingGlass)
 
-
+const key = import.meta.env.VITE_BOOKS_KEY;
 
 function Header(){
 
@@ -15,7 +15,7 @@ function Header(){
 
     async function handleSearch(typed: string){
         
-        const response = await fetch(API + typed + "&key=ablubleble&maxResults=3");
+        const response = await fetch(API + typed + "&key=" + key + "&maxResults=3");
         const data = await response.json();
         console.log(data);
     }
